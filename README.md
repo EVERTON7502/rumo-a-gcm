@@ -24,6 +24,15 @@ Funciona no navegador do computador (layout principal) e do celular, pode ser in
 - **iPhone (Safari)**: toque em **Compartilhar** e em **Adicionar à Tela de Início**.
 - **Computador (Chrome ou Edge)**: clique no ícone de instalar na barra de endereço.
 
+## Sincronizar notebook e celular
+
+Na aba **Hoje**, abra **Sincronizar notebook e celular** e siga os 3 passos uma vez em cada aparelho:
+
+1. **Criar chave no GitHub** (permissão só "gist", sem expiração) e copie a chave `ghp_…`.
+2. Cole no campo e toque em **Conectar**.
+
+O progresso fica num gist **privado** da sua conta do GitHub (`rumo-a-gcm-progresso.json`, não apague). Cada mudança é enviada sozinha alguns segundos depois, e o que foi feito em outro aparelho chega quando o app abre ou volta para a tela. Os aparelhos são **juntados**, nunca sobrescritos: blocos, revisões, erros, anotações (vale a mais nova) e tempo estudado (soma dos aparelhos).
+
 ## Backup e restauração do progresso
 
 O progresso fica **só no navegador de cada aparelho** (localStorage, chave `gcm2`). Ele não vai sozinho de um aparelho para outro nem de um endereço para outro.
