@@ -12,6 +12,7 @@ Funciona no navegador do computador (layout principal) e do celular, pode ser in
 - **Revisões 1, 7 e 30 dias** depois de cada assunto, e **Caderno de erros**.
 - **Plano** de 11 semanas (02/11/2026 até a prova).
 - **Matérias**: as 8 matérias e os 130 assuntos do edital, cada um com PDF e flashcards.
+- **Minhas anotações** em cada assunto (na aba Matérias, no bloco em andamento e nas revisões). Salvam sozinhas enquanto você digita e entram no código de backup.
 - **Questões**: 69 questões da prova oficial GCM Salvador 2019 (FGV) com gabarito oficial; 39 questões autorais ficam marcadas e só aparecem se você escolher. As questões são apoio e não contam para concluir os estudos.
 - **Simulados**: aleatório, modelo do edital (70 questões, resultado por Módulo com a meta 14/21/35) e a prova de 2019 completa em 4 horas.
 - **Edital e prova**: quadro de matérias, regra de aprovação, etapas, TAF, avaliação psicológica, dia da prova, desempate, curso de formação, cronograma, requisitos e link oficial.
