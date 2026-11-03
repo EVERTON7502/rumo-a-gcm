@@ -7,7 +7,7 @@ Funciona no navegador do computador (layout principal) e do celular, pode ser in
 ## Funcionalidades
 
 - **Hoje**: "Sua próxima ação", contagem regressiva até a prova, tempo estudado hoje e nos últimos 7 dias, sequência de dias, progresso da semana e do plano, gráfico dos últimos 7 dias, mapa de constância de 28 dias e progresso por matéria.
-- **2 matérias por dia**, cada uma com seus assuntos e etapas (aula com aviso de pausa a cada 6 min, pausa, resumo em PDF, questões opcionais, erros e flashcards). Você começa por qualquer uma. Depois das 2, aparece um **bônus opcional**, que adianta o plano sem criar pendência.
+- **2 matérias por dia**, cada uma com seus assuntos e etapas (aula de 20 min com aviso de pausa a cada 6 min, pausa, resumo em PDF, **questões FGV em todo bloco**, erros e flashcards). Você começa por qualquer uma. Depois das 2, aparece um **bônus opcional**, que adianta o plano sem criar pendência.
 - **Cronômetro livre**: conta para cima, sem tempo fixo (os minutos são só sugestão), com Iniciar, Pausar/Retomar e Parar e concluir. Tudo é gravado a cada etapa; fechar a página não perde o que foi feito.
 - **Revisões 1, 7 e 30 dias** depois de cada assunto, e **Caderno de erros**.
 - **Plano** de 11 semanas (de terça, 03/11/2026, até a prova em 17/01/2027).
@@ -16,6 +16,7 @@ Funciona no navegador do computador (layout principal) e do celular, pode ser in
 - **Como a FGV cobra**: padrões de 177 questões de 3 provas da FGV (GCM Salvador 2019, Câmara de Fortaleza 2023, Bombeiros AM 2021) em cada matéria e assunto, na aba Edital e na etapa Aula. Detalhes em PADROES_FGV.md.
 - **Minhas anotações** em cada assunto (na aba Matérias, no bloco em andamento e nas revisões). Salvam sozinhas enquanto você digita e entram no código de backup.
 - **Questões**: 69 questões da prova oficial GCM Salvador 2019 (FGV) com gabarito oficial; 39 questões autorais ficam marcadas e só aparecem se você escolher. As questões são apoio e não contam para concluir os estudos.
+- **Simulados no plano**: mini simulado de 30 questões aos domingos a partir da semana 3 e simulados completos de 70 questões em 03/01 e 10/01/2027.
 - **Simulados**: aleatório, modelo do edital (70 questões, resultado por Módulo com a meta 14/21/35) e a prova de 2019 completa em 4 horas.
 - **Edital e prova**: quadro de matérias, regra de aprovação, etapas, TAF, avaliação psicológica, dia da prova, desempate, curso de formação, cronograma, requisitos e link oficial.
 - Tema escuro (padrão) e claro, tutorial de 3 passos na primeira visita, seção "Como usar".
