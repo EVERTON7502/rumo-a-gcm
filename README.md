@@ -13,6 +13,7 @@ Funciona no navegador do computador (layout principal) e do celular, pode ser in
 - **Plano** de 11 semanas (de terça, 03/11/2026, até a prova em 17/01/2027).
 - **Matérias**: as 8 matérias e os 130 assuntos do edital, cada um com PDF e flashcards.
 - **O que o edital pede** em cada assunto: o texto do edital dividido em pontos, com caixinha para marcar o que já estudou, busca de aula de cada ponto e link "Ler a lei" quando o ponto cita uma lei. O botão "Aula" é só uma busca no YouTube; use esta lista para conferir se a aula cobriu tudo.
+- **Como a FGV cobra**: padrões de 177 questões de 3 provas da FGV (GCM Salvador 2019, Câmara de Fortaleza 2023, Bombeiros AM 2021) em cada matéria e assunto, na aba Edital e na etapa Aula. Detalhes em PADROES_FGV.md.
 - **Minhas anotações** em cada assunto (na aba Matérias, no bloco em andamento e nas revisões). Salvam sozinhas enquanto você digita e entram no código de backup.
 - **Questões**: 69 questões da prova oficial GCM Salvador 2019 (FGV) com gabarito oficial; 39 questões autorais ficam marcadas e só aparecem se você escolher. As questões são apoio e não contam para concluir os estudos.
 - **Simulados**: aleatório, modelo do edital (70 questões, resultado por Módulo com a meta 14/21/35) e a prova de 2019 completa em 4 horas.
