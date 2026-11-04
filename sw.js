@@ -1,6 +1,6 @@
 // Service worker do Rumo à GCM: cache-first, funciona offline depois da primeira visita.
 // Ao publicar uma nova versão, aumente VERSION: o cache antigo é apagado e o app avisa "Nova versão disponível".
-const VERSION = "v1.7.2";
+const VERSION = "v1.7.3";
 const CACHE = "rumo-gcm-" + VERSION;
 const ASSETS = [
   "./",
