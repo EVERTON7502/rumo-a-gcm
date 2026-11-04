@@ -13,7 +13,7 @@ Funciona no navegador do computador (layout principal) e do celular, pode ser in
 - **Plano** de 11 semanas (de terça, 03/11/2026, até a prova em 17/01/2027).
 - **Matérias**: as 8 matérias e os 130 assuntos do edital, cada um com PDF e flashcards.
 - **Aulas deste assunto**: 180 vídeos do YouTube escolhidos e conferidos, um para cada parte do assunto (ex.: Penal 1 = "Conceito de Direito Penal" + "Fontes do Direito Penal"), com título, professor e duração. O botão "Aula" abre direto o primeiro vídeo. Lista em tools/aulas.json.
-- **Filtro no QConcursos**: em cada assunto (e na tela Hoje, nas matérias do dia), o link que já abre o QConcursos com disciplina, assunto e banca FGV marcados, a quantidade de questões, o que marcar à mão e o aviso quando há poucas questões da FGV. Mapa em tools/qconcursos.json.
+- **Filtro no QConcursos**: em cada assunto (e na tela Hoje, nas matérias do dia), o link que já abre o QConcursos com disciplina, assunto, banca FGV e nível médio marcados, a quantidade de questões, o que marcar à mão e o aviso quando há poucas questões da FGV. Mapa em tools/qconcursos.json.
 - **O que o edital pede** em cada assunto: o texto do edital dividido em pontos, com caixinha para marcar o que já estudou, busca de aula de cada ponto e link "Ler a lei" quando o ponto cita uma lei. Use esta lista para conferir se a aula cobriu tudo.
 - **Como a FGV cobra**: padrões de 237 questões de 4 provas da FGV (GCM Salvador 2019, Polícia Civil PR 2026, Câmara de Fortaleza 2023, Bombeiros AM 2021) em cada matéria e assunto, na aba Edital e na etapa Aula. Detalhes em PADROES_FGV.md.
 - **Minhas anotações** em cada assunto (na aba Matérias, no bloco em andamento e nas revisões). Salvam sozinhas enquanto você digita e entram no código de backup.
