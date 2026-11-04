@@ -71,6 +71,7 @@ button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:tra
 
 /* Header */
 .top{display:flex;align-items:center;gap:12px;padding:calc(12px + env(safe-area-inset-top,0px)) 16px 8px;max-width:1100px;margin:0 auto}
+.home{cursor:pointer;-webkit-tap-highlight-color:transparent}.home:focus-visible{outline:2px solid var(--ac-tx);outline-offset:3px;border-radius:12px}.brand.home:hover b{color:var(--ac-tx)}
 .logo{width:44px;height:44px;flex:none;border-radius:14px;box-shadow:var(--glow)}
 .top .tt{flex:1;min-width:0}
 .top h1{font-size:18px;line-height:24px;font-weight:800;background:linear-gradient(90deg,var(--tx),var(--ac-tx));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -315,12 +316,12 @@ nav.tabs button.on svg{transform:translateY(-2px) scale(1.12);color:var(--ac-tx)
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs></svg>
 <header class="top">
-<img class="logo" src="icons/icon-192.png" alt="" width="44" height="44">
-<div class="tt"><h1>Rumo à GCM Salvador</h1><small id="sub"></small></div>
+<img class="logo home" src="icons/icon-192.png" alt="" width="44" height="44" onclick="goHome()">
+<div class="tt home" role="link" tabindex="0" title="Voltar para o início" aria-label="Voltar para a tela inicial" onclick="goHome()" onkeydown="if(event.key=='Enter'||event.key==' '){event.preventDefault();goHome()}"><h1>Rumo à GCM Salvador</h1><small id="sub"></small></div>
 <button class="ib" id="themeBtn" type="button" aria-label="Alternar tema claro ou escuro"></button>
 </header>
 <main id="v" aria-live="polite"></main>
-<nav class="tabs" aria-label="Abas"><div class="brand"><img src="icons/icon-192.png" alt="" width="44" height="44"><div><b>Rumo à GCM</b><small>Salvador · FGV 2026</small></div></div><div class="in">
+<nav class="tabs" aria-label="Abas"><div class="brand home" role="link" tabindex="0" title="Voltar para o início" aria-label="Voltar para a tela inicial" onclick="goHome()" onkeydown="if(event.key=='Enter'||event.key==' '){event.preventDefault();goHome()}"><img src="icons/icon-192.png" alt="" width="44" height="44"><div><b>Rumo à GCM</b><small>Salvador · FGV 2026</small></div></div><div class="in">
 <button data-t="h" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Hoje</span></button>
 <button data-t="r"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg><span>Revisão</span></button>
 <button data-t="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Plano</span></button>
@@ -743,6 +744,8 @@ function edital(){const td=new Date(tm0),pd=s=>{const[d,m,y]=s.split("/").map(Nu
  h+=`<div class="card" style="--d:12"><div class="ch"><h2>Curso de Formação Inicial</h2><small class="mu">item 17</small></div><ul class="clean"><li><b>744 horas-aula</b> presenciais, inclusive em fins de semana e feriados, organizado pela Guarda Civil Municipal.</li><li>Aprovação: no mínimo <b>60%</b> nas avaliações do curso e <b>60%</b> na avaliação de manuseio de arma de fogo.</li><li>Bolsa-auxílio de <b>85% do vencimento</b> durante o curso, sem descontos.</li><li>Só é convocado quem for considerado apto na perícia médica.</li></ul></div>`;
  h+=`<div class="card" style="--d:13"><div class="ch"><h2>Outras informações</h2></div><ul class="clean"><li>Taxa de inscrição: R$ 98,00. Inscrições de 21/09 a 30/10/2026; boleto até 06/11/2026.</li><li>Validade do concurso: 2 anos, prorrogável uma vez por igual período.</li><li>Reservas: 5% PcD, 30% pessoas pretas ou pardas e 20% mulheres.</li><li>Investidura na Classe Inicial (3ª Classe, nível I), regime estatutário (Lei Complementar nº 1/1991), com estágio probatório.</li><li>O resultado final sai em 4 listas (geral, PcD, pessoas pretas ou pardas e mulheres), até 10 vezes o número de vagas por lista.</li><li>Contato da FGV: concursopmsguarda26@fgv.br</li></ul></div></div>`;
  h+=howTo();v.innerHTML=h}
+// logo e nome no topo: sempre voltam para a tela inicial (Hoje), no começo da página
+function goHome(){tab="h";draw();window.scrollTo({top:0,behavior:"smooth"})}
 function draw(){try{localStorage.setItem("gcm2_tab",tab)}catch(e){}document.querySelectorAll("nav.tabs button").forEach(b=>{const on=b.dataset.t==tab;b.classList.toggle("on",on);on?b.setAttribute("aria-current","page"):b.removeAttribute("aria-current")});({h:hoje,r:revTab,c:cron,m:mat,q:ques,s:sim,e:edital})[tab]();if(tab=="h"&&!D.run)v.innerHTML+=syCard()+bk();sub()}
 document.querySelectorAll("nav.tabs button").forEach(b=>b.onclick=()=>{if(tab!=b.dataset.t){tab=b.dataset.t;draw();scrollTo({top:0})}else scrollTo({top:0,behavior:"smooth"})});
 let la=0;setInterval(()=>{const r=D.run;if(!r||!r.end)return;const c=ctxOf(r);if(!c)return;const st=c.steps[r.step],el=elapsed(r),tt=document.getElementById("tm");if(tt)tt.textContent=mm(el);const tb=document.getElementById("tbar");if(tb)tb.style.width=Math.min(100,el*100/(st.m*60))+"%";const hn=document.getElementById("hint");if(st.k=="aula"&&hn&&r.t0){const rs=el%360,al=el>=360&&rs<20;hn.textContent=al?"⏸ PAUSE AGORA: explique em voz alta o que ouviu":"Próxima pausa em "+mm(360-rs);hn.classList.toggle("alert",al);if(el>0&&rs==0)beep()}},1000);
